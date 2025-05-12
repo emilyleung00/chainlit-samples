@@ -19,7 +19,7 @@ model = OpenAIModel(
     provider=OpenAIProvider(
         base_url='https://openrouter.ai/api/v1',
         #api_key=os.getenv('OPENROUTER_API_KEY'),
-        api_key='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',
+        api_key=['OPENROUTER_API_KEY'],
         http_client=httpx.AsyncClient(verify=False)
     ),
 )
